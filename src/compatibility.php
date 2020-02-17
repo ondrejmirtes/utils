@@ -17,3 +17,15 @@ namespace Nette\Utils {
 		class_alias(\Nette\HtmlStringable::class, IHtmlString::class);
 	}
 }
+
+namespace Nette\Localization {
+	if (false) {
+		/** @deprecated use Nette\Utils\Translator */
+		interface ITranslator
+		{
+		}
+	} elseif (!interface_exists(ITranslator::class)) {
+		class_alias(\Nette\Utils\Translator::class, ITranslator::class);
+	}
+}
+

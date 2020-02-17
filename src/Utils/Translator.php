@@ -7,13 +7,13 @@
 
 declare(strict_types=1);
 
-namespace Nette\Localization;
+namespace Nette\Utils;
 
 
 /**
  * Translator adapter.
  */
-interface ITranslator
+interface Translator
 {
 	/**
 	 * Translates the given string.
@@ -22,3 +22,6 @@ interface ITranslator
 	 */
 	function translate($message, ...$parameters): string;
 }
+
+
+interface_exists(Nette\Localization\ITranslator::class);
