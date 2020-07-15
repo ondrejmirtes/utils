@@ -195,6 +195,7 @@ class Validators
 	/**
 	 * Finds whether a value is an integer or a float.
 	 * @param  mixed  $value
+	 * @internal
 	 */
 	public static function isNumber($value): bool
 	{
@@ -225,6 +226,7 @@ class Validators
 	/**
 	 * Finds whether a value is a syntactically correct callback.
 	 * @param  mixed  $value
+	 * @internal
 	 */
 	public static function isCallable($value): bool
 	{
@@ -348,6 +350,7 @@ XX
 
 	/**
 	 * Checks whether the input is a class, interface or trait.
+	 * @internal
 	 */
 	public static function isType(string $type): bool
 	{
