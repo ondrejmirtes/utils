@@ -28,4 +28,3 @@ namespace Nette\Localization {
 		class_alias(\Nette\Utils\Translator::class, ITranslator::class);
 	}
 }
-
